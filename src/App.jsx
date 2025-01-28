@@ -1,11 +1,15 @@
 import { useState } from 'react'
+import { Intro } from './Intro'
 import './App.css'
 
 function App() {
 
   return (
-    <h1>Hello World!</h1>
-  )
+    <Intro 
+    name = "Ronit Sohal"
+    characteristics={["developer", "problem-solver", "team player"]}
+    />
+  );
 }
 
 export default App
