@@ -57,7 +57,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="bg-primary min-h-screen overflow-hidden"> {/* Make sure the background color covers the entire page and prevent scrolling */}
+      <div className="bg-primary min-h-screen overflow-hidden">
         <Box sx={{ width: '100%', textAlign: 'center', marginTop: '24px' }}>
           <Tabs
             value={tabIndex}

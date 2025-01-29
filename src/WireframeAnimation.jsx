@@ -1,8 +1,6 @@
 import { useEffect } from "react";
-import { render } from "react-dom";
 import * as THREE from "three";
 import { OrbitControls  } from "three/examples/jsm/controls/OrbitControls"
-import Stats from 'three/examples/jsm/libs/stats.module'
 
 export const WireframeAnimation = () => {
   useEffect(() => {
@@ -38,6 +36,8 @@ export const WireframeAnimation = () => {
 
     // Add orbit controls
     const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableZoom = false; // Disable zoom
+    controls.enablePan = false; // Disable pan
 
 
     // Animation loop
@@ -50,10 +50,14 @@ export const WireframeAnimation = () => {
 
     // Handle resizing
     const handleResize = () => {
-      camera.aspect = window.innerWidth / window.innerHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(window.innerWidth, window.innerHeight);
-    };
+        const container = canvas.parentElement; // Get the container of the canvas
+        const width = container.clientWidth; // Use container width
+        const height = container.clientHeight; // Use container height
+      
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+        renderer.setSize(width, height);
+      };
     window.addEventListener("resize", handleResize);
 
     // Cleanup on component unmount
@@ -64,7 +68,7 @@ export const WireframeAnimation = () => {
   }, []);
 
   return (
-    <div className="w-[500px] h-[500px]">
+    <div className="w-[500px] h-[500px] max-w-full max-h-full overflow-hidden">
       <canvas id="myThreeJsCanvas" className="w-full h-full"></canvas>
     </div>
   );
