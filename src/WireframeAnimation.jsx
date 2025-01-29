@@ -1,17 +1,12 @@
 import { useEffect } from "react";
 import * as THREE from "three";
-import { OrbitControls  } from "three/examples/jsm/controls/OrbitControls"
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 export const WireframeAnimation = () => {
   useEffect(() => {
     // Initialize the scene, camera, and renderer
     const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
-      50,
-      1,
-      1,
-      1000
-    );
+    const camera = new THREE.PerspectiveCamera(50, 1, 1, 1000);
     camera.position.z = 96;
 
     const canvas = document.getElementById("myThreeJsCanvas");
@@ -28,20 +23,23 @@ export const WireframeAnimation = () => {
     spotLight.position.set(0, 64, 32);
     scene.add(spotLight);
 
-    // Create a rotating cube
-    const boxGeometry = new THREE.BoxGeometry(32,32,32);
-    const boxMaterial = new THREE.MeshNormalMaterial();
-    const boxMesh = new THREE.Mesh(boxGeometry, boxMaterial);
-    scene.add(boxMesh);
+    // Create a wireframe sphere using triangular faces
+    const geometry = new THREE.IcosahedronGeometry(25,3); // Icosahedron (triangles)
+    const wireframe = new THREE.WireframeGeometry(geometry);
+    const line = new THREE.LineSegments(wireframe);
+    line.material.depthTest = false;
+    line.material.opacity = 0.5;
+    line.material.transparent = true;
+    scene.add(line);
 
     // Add orbit controls
     const controls = new OrbitControls(camera, renderer.domElement);
-    controls.enableZoom = false; // Disable zoom
-    controls.enablePan = false; // Disable pan
-
+    controls.enableZoom = false;
+    controls.enablePan = false;
 
     // Animation loop
     const animate = () => {
+      line.rotation.y += 0.005; // Slight rotation for effect
       controls.update();
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
@@ -50,14 +48,14 @@ export const WireframeAnimation = () => {
 
     // Handle resizing
     const handleResize = () => {
-        const container = canvas.parentElement; // Get the container of the canvas
-        const width = container.clientWidth; // Use container width
-        const height = container.clientHeight; // Use container height
-      
-        camera.aspect = width / height;
-        camera.updateProjectionMatrix();
-        renderer.setSize(width, height);
-      };
+      const container = canvas.parentElement;
+      const width = container.clientWidth;
+      const height = container.clientHeight;
+
+      camera.aspect = width / height;
+      camera.updateProjectionMatrix();
+      renderer.setSize(width, height);
+    };
     window.addEventListener("resize", handleResize);
 
     // Cleanup on component unmount

@@ -37,7 +37,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           color: 'white', // Text color always white
-          margin: '0 16px', // Add spacing between tabs
+          margin: '0 32px', // Increased spacing between tabs
           '&.Mui-selected': {
             color: '#ffffff', // Keep text white for selected tab
           },
