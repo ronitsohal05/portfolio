@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Intro } from './Intro';
 import './App.css';
 import { WireframeAnimation } from './WireframeAnimation';
+import { SocialIcons } from './SocialIcons';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
@@ -72,13 +73,19 @@ function App() {
             <Tab label="Memories" />
           </Tabs>
         </Box>
-        <div className="flex flex-row items-center justify-around h-screen bg-primary text-white overflow-hidden">
-          <Intro
-            name="Ronit Sohal"
-            characteristics={['developer', 'problem-solver', 'team player']}
-          />
+        <div className="flex flex-row items-center justify-evenly h-screen bg-primary text-white overflow-hidden">
           <WireframeAnimation />
+          <div className='w-1/3 flex justify-start'>
+            <Intro
+              name="Ronit Sohal"
+              characteristics={['developer', 'problem-solver', 'team player']}
+            />
+          </div>
+          <div>
+            <SocialIcons />
+          </div>
         </div>
+        
       </div>
     </ThemeProvider>
   );

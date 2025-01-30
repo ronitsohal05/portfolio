@@ -66,7 +66,7 @@ export const WireframeAnimation = () => {
   }, []);
 
   return (
-    <div className="w-[500px] h-[500px] max-w-full max-h-full overflow-hidden">
+    <div className="w-[200px] h-[200px] max-w-full max-h-full overflow-hidden">
       <canvas id="myThreeJsCanvas" className="w-full h-full"></canvas>
     </div>
   );
