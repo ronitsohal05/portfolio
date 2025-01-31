@@ -19,5 +19,33 @@
       animation: blink 0.7s step-end infinite;
     }
   }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #030303;
+  }
   
+  .hover-effect {
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #ffffff !important;
+  }
   
+  .hover-effect:hover {
+    transform: scale(1.2);
+    color: #888888 !important;
+  }
+
+  .wireframe-container {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+  }
+  
+  .wireframe-container svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  @font-face {
+    font-family: customFont;
+    src: url(../public/TeknafRegular-rv0aB.otf);
+  }

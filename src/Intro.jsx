@@ -33,11 +33,11 @@ export const Intro = ({ name, characteristics }) => {
   }, [text, isDeleting, currentIndex, characteristics]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-primary text-secondary">
-      <h1 className="font-bold text-3xl">My name is {name}.</h1>
-      <h2 className="text-xl mt-4 font-bold">
-        I'm a <span className="font-bold">{text}</span>
-        <span className="border-r-2 border-white animate-blink">|</span>
+    <div className="bg-primary text-secondary font-[customFont] d:text-2lg lg:text-3xl">
+      <h1 className="">My name is {name}.</h1>
+      <h2 className="">
+        I'm a <span className="">{text}</span>
+        <span className="border-r-2 border-white animate-blink font-[customFont]">|</span>
       </h2>
     </div>
   );
