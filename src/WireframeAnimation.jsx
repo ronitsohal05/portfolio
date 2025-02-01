@@ -25,7 +25,7 @@ export const WireframeAnimation = () => {
     scene.add(spotLight);
 
     // Large wireframe sphere
-    const geometry = new THREE.IcosahedronGeometry(50, 3); // Increased size
+    const geometry = new THREE.IcosahedronGeometry(50, 1); // Increased size
     const wireframe = new THREE.WireframeGeometry(geometry);
     const line = new THREE.LineSegments(wireframe);
     line.material.depthTest = false;
@@ -38,9 +38,33 @@ export const WireframeAnimation = () => {
     controls.enableZoom = false;
     controls.enablePan = false;
 
+    // Mouse movement handling
+    let lastMouseX = 0, lastMouseY = 0;
+    let velocityX = 0, velocityY = 0;
+    let friction = 0.99; // Decay factor for a smooth stop
+
+    const onMouseMove = (event) => {
+      const { innerWidth, innerHeight } = window;
+      let newMouseX = (event.clientX / innerWidth) * 2 - 1;
+      let newMouseY = (event.clientY / innerHeight) * 2 - 1;
+
+      velocityX = newMouseX - lastMouseX;
+      velocityY = newMouseY - lastMouseY;
+
+      lastMouseX = newMouseX;
+      lastMouseY = newMouseY;
+    };
+
+    window.addEventListener("mousemove", onMouseMove);
+
     // Animation loop
     const animate = () => {
-      line.rotation.y += 0.005;
+      // Apply velocity and decay
+      
+
+      line.rotation.y += velocityX
+      line.rotation.x += velocityY
+
       renderer.render(scene, camera);
       requestAnimationFrame(animate);
     };
