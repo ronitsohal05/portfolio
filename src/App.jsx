@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import './App.css';
-import { Homepage } from './Homepage/Homepage';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Homepage } from './Homepage/Homepage';
+import { AboutMe } from './AboutMe/AboutMe';
+
 
 const theme = createTheme({
   palette: {
@@ -61,7 +63,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="bg-primary">
+      <div className="bg-primary pt-20">
         {/* Tabs Section */}
         <Box sx={{ width: '100%', textAlign: 'center' }}>
           <Tabs
@@ -83,6 +85,9 @@ function App() {
         {/* Main Content Section */}
         {tabIndex === 0 && (
           <Homepage />
+        )}
+        {tabIndex === 1 && (
+          <AboutMe />
         )}
       </div>
     </ThemeProvider>

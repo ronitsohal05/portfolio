@@ -6,8 +6,7 @@ import { WireframeAnimation } from './WireframeAnimation'
 export function Homepage() {
     return (
         <div style={{ 
-            paddingTop: '64px',
-            height: 'calc(100vh - 64px)',
+            height: 'calc(100vh - 100px)',
             display: 'flex',
             alignItems: 'center',
             position: 'relative',
