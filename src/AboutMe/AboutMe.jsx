@@ -13,7 +13,7 @@ import { aboutData, spotifyData, experienceData} from "./AboutMePageData";
         </h1>
   
         {/* Main Grid Layout (50% About - 50% Other Sections) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {/* Left Column - About Section (Takes Half) */}
           <section className="space-y-8 border border-gray-700 bg-zinc-90 rounded-lg p-6 shadow-md">
             <h1 className="text-secondary text-4xl font-bold">About</h1>
@@ -25,7 +25,7 @@ import { aboutData, spotifyData, experienceData} from "./AboutMePageData";
           </section>
   
           {/* Right Column - Spotify + Experience (Takes Half) */}
-          <div className="space-y-8">
+          <div className="space-y-2">
             {/* Experience Section (Below Spotify Cards) */}
             <section className="border border-gray-700 bg-zinc-90 rounded-lg p-6 shadow-md">
               <div className="flex justify-between items-center mb-4">
@@ -44,7 +44,7 @@ import { aboutData, spotifyData, experienceData} from "./AboutMePageData";
             </section>
 
             {/* Spotify Grid (2x2 Layout) */}
-            <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <section className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {spotifyData.map((card, index) => (
                 <SpotifyCard key={index} {...card} />
               ))}
