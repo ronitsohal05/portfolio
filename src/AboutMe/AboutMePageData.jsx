@@ -28,28 +28,28 @@ export const spotifyData = [
       title: "",
       subtitle: "",
       spotifyText: "",
-      imageUrl: "/placeholder.svg",
+      imageUrl: "../../public/pictures/IMG_5585.jpg",
     },
     {
       label: "drives",
       bgColor: "bg-red-600/20",
       title: "",
       subtitle: "",
-      imageUrl: "/placeholder.svg",
+      imageUrl: "../../public/pictures/IMG_1943.jpg",
     },
     {
       label: "creative",
       bgColor: "bg-purple-600/20",
       title: "",
       subtitle: "",
-      imageUrl: "/placeholder.svg",
+      imageUrl: "../../public/pictures/IMG_7422.jpg",
     },
     {
       label: "flow",
       bgColor: "bg-teal-600/20",
       title: "",
       subtitle: "",
-      imageUrl: "/placeholder.svg",
+      imageUrl: "../../public/pictures/IMG_0192.jpg",
     },
   ]
 
