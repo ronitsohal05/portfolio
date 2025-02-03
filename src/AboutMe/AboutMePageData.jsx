@@ -52,17 +52,17 @@ export const spotifyData = [
 
 export const experienceData = [
   {
-    icon: "",
+    type: "jhu",
     title: "Research Assistant",
     year: "2024 - Present"
   },
   {
-    icon: "",
+    type: "hophacks",
     title: "Organizer and Website Developer",
     year: "2024 - Present"
   },
   {
-    icon: "",
+    type: "umiami",
     title: "Computational Biology Intern",
     year: "2023"
   } 
