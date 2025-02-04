@@ -1,8 +1,8 @@
 export function AboutCard({ title, content }) {
     return (
       <div className="space-y-2">
-        <h2 className="text-sm text-gray-400">{title}</h2>
-        <p className="text-gray-300 text-lg leading-relaxed">{content}</p>
+        <h2 className="text-sm text-gray-400 font-[customFont]">{title}</h2>
+        <p className="text-gray-300 leading-relaxed text-base font-[customFont]">{content}</p>
       </div>
     )
 }

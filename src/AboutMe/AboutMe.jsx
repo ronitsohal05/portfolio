@@ -12,12 +12,12 @@ import { aboutData, spotifyData, experienceData} from "./AboutMePageData";
           Ronit Sohal
         </h1>
   
-        {/* Main Grid Layout (50% About - 50% Other Sections) */}
+        {/* Main Grid Layout*/}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-          {/* Left Column - About Section (Takes Half) */}
-          <section className="space-y-8 border border-gray-700 bg-zinc-90 rounded-lg p-6 shadow-md">
-            <h1 className="text-secondary text-4xl font-bold">About</h1>
-            <div className="space-y-6">
+          {/* Left Column*/}
+          <section className="space-y-2 border border-gray-700 bg-zinc-90 rounded-lg p-6 shadow-md">
+            <h1 className="text-secondary text-2xl font-bold font-[customFont]">About</h1>
+            <div className="space-y-2">
               {aboutData.map((item, index) => (
                 <AboutCard key={index} {...item} />
               ))}
@@ -26,7 +26,7 @@ import { aboutData, spotifyData, experienceData} from "./AboutMePageData";
   
           {/* Right Column - Spotify + Experience (Takes Half) */}
           <div className="space-y-2">
-            {/* Experience Section (Below Spotify Cards) */}
+            {/* Experience Section */}
             <section className="border border-gray-700 bg-zinc-90 rounded-lg p-6 shadow-md">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-sm text-gray-400">RECENT EXPERIENCES</h2>
