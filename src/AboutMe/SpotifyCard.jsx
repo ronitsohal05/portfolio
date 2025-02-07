@@ -1,6 +1,3 @@
-import { Play, Plus, MoreHorizontal } from "lucide-react"
-
-
 export function SpotifyCard({ label, bgColor, url, imageUrl }) {
   return (
     <div className={`relative rounded-2xl overflow-hidden ${bgColor} aspect-square`}>

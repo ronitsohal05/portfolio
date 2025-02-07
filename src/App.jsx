@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Homepage } from './Homepage/Homepage';
 import { AboutMe } from './AboutMe/AboutMe';
+import { Projects } from './Projects/Projects';
 
 
 const theme = createTheme({
@@ -88,6 +89,9 @@ function App() {
         )}
         {tabIndex === 1 && (
           <AboutMe />
+        )}
+        {tabIndex === 2 && (
+          <Projects />
         )}
       </div>
     </ThemeProvider>

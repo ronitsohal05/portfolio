@@ -23,7 +23,7 @@ export function Homepage() {
             marginRight: '10%', // Adjusted margin for better spacing
             position: 'relative'
             }}>
-            <WireframeAnimation />
+                <WireframeAnimation />
             </div>
 
             {/* Name & Description (Middle) */}
@@ -34,10 +34,10 @@ export function Homepage() {
             alignItems: 'center',
             position: 'relative'
             }}>
-            <Intro
-                name="Ronit Sohal"
-                characteristics={['developer', 'problem-solver', 'team player']}
-            />
+                <Intro
+                    name="Ronit Sohal"
+                    characteristics={['student', 'developer', 'problem solver', 'dancer', 'chill guy']}
+                />
             </div>
 
             {/* Social Icons (Fixed Right Side) */}
@@ -48,8 +48,8 @@ export function Homepage() {
             transform: 'translateY(-50%)',
             padding: '16px'
             }}>
-            <SocialIcons />
+                <SocialIcons />
             </div>
         </div>
-    )
+    );
 }
