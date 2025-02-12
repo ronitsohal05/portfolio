@@ -9,6 +9,7 @@ const timelineElements = [
       icon: "school",
       color: "blue",
       tech: ["JavaScript", "HTML", "CSS", "Java"],
+      image: "public/pictures/ProjectPics/placeholder.jpg"
     },
     {
       id: 2,
@@ -20,6 +21,7 @@ const timelineElements = [
       icon: "work",
       color: "purple",
       tech: ["JavaScript", "React", "Node.js", "SQL"],
+      image: "public/pictures/ProjectPics/placeholder.jpg"
     },
     {
       id: 3,
@@ -31,6 +33,7 @@ const timelineElements = [
       icon: "work",
       color: "yellow",
       tech: ["React", "HTML", "CSS", "JavaScript", "Angular"],
+      image: "public/pictures/ProjectPics/placeholder.jpg"
     },
     {
       id: 4,
@@ -42,6 +45,7 @@ const timelineElements = [
       icon: "work",
       color: "red",
       tech: ["Node.js", "JavaScript", "SQL", "Python"],
+      image: "public/pictures/ProjectPics/placeholder.jpg"
     },
     {
       id: 5,
@@ -53,6 +57,7 @@ const timelineElements = [
       icon: "work",
       color: "orange",
       tech: ["JavaScript", "React", "HTML", "CSS", "Python"],
+      image: "public/pictures/ProjectPics/placeholder.jpg"
     },
   ];
   
