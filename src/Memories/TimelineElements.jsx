@@ -38,7 +38,7 @@ export function TimelineElement1({ element }) {
       {/* Right Section: Small Text Box */}
       <div className="w-1/2 flex justify-start items-center pl-25 relative z-15">
         <div className="w-40 h-40 bg-gray-900 flex items-center justify-center text-white text-sm p-2 rounded-lg shadow-lg">
-          <p>{element.smallText}</p>
+          <h1 className="text-secondary font-[customFont]">{element.date}</h1>
         </div>
       </div>
     </div>
@@ -52,7 +52,7 @@ export function TimelineElement2({ element }) {
       {/* Right Section: Small Text Box */}
       <div className="w-1/2 flex justify-end items-center pr-25 relative z-15">
         <div className="w-40 h-40 bg-gray-900 flex items-center justify-center text-white text-sm p-2 rounded-lg shadow-lg">
-          <p>{element.smallText}</p>
+          <h1 className="text-secondary font-[customFont]">{element.date}</h1>
         </div>
       </div>
 
