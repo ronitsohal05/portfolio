@@ -1,7 +1,5 @@
 import timelineElements from "./MemoriesData";
-import schoolIcon from "/icons/school.svg";
-import workIcon from "/icons/work.svg";
-import { TimelineElement } from "./TimelineElement"
+import { TimelineElement1, TimelineElement2 } from "./TimelineElements"
 
 export function Timeline() {
   return (
@@ -10,12 +8,18 @@ export function Timeline() {
       <div className="w-1 bg-gray-600 absolute h-full top-0 left-1/2 transform -translate-x-1/2"></div>
 
       {timelineElements.map((element, index) => {
-
-      
-
-        return (
-          <TimelineElement key = {index} element = {element} />
-        );
+        
+        {
+          if(index%2===0){
+            return (
+              <TimelineElement1 key = {index} element = {element} />
+            );
+          }else{
+            return (
+              <TimelineElement2 key = {index} element = {element} />
+            );
+          }
+        }
       })}
     </div>
   );
