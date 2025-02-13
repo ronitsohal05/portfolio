@@ -5,24 +5,24 @@ export function TimelineElement1({ element }) {
   return (
     <div key={element.id} className="w-full flex relative my-6">
       
-      {/* Left Section: Image */}
+      {/* Left Section: Video */}
       <div className="w-1/2 flex justify-end pr-25 relative z-15">
-        <div className="w-50 h-100">
-          <img
-            src={element.image}
-            alt="Timeline visual"
+        <div className="w-70 h-140">
+          <video
+            src={element.highlight}
+            controls
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />
         </div>
       </div>
 
-      <div className="absolute right-1/2 w-[100px] h-1 top-1/16 overflow-hidden">
+      <div className="absolute right-1/2 w-[100px] h-1 top-1/8 overflow-hidden">
         <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
       </div>
       <div className="absolute left-1/2 w-[100px] h-1 top-1/2 overflow-hidden">
         <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
       </div>
-      <div className="absolute right-1/2 w-[100px] h-1 top-15/16 overflow-hidden">
+      <div className="absolute right-1/2 w-[100px] h-1 top-7/8 overflow-hidden">
         <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
       </div>
 
@@ -45,8 +45,6 @@ export function TimelineElement1({ element }) {
   );
 }
 
-
-
 export function TimelineElement2({ element }) {
   return (
     <div key={element.id} className="w-full flex relative my-6">
@@ -58,13 +56,13 @@ export function TimelineElement2({ element }) {
         </div>
       </div>
 
-      <div className="absolute left-1/2 w-[100px] h-1 top-1/16 overflow-hidden">
+      <div className="absolute left-1/2 w-[100px] h-1 top-1/8 overflow-hidden">
         <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
       </div>
       <div className="absolute right-1/2 w-[100px] h-1 top-1/2 overflow-hidden">
         <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
       </div>
-      <div className="absolute left-1/2 w-[100px] h-1 top-15/16 overflow-hidden">
+      <div className="absolute left-1/2 w-[100px] h-1 top-7/8 overflow-hidden">
         <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
       </div>
 
@@ -77,21 +75,16 @@ export function TimelineElement2({ element }) {
         />
       </div>
 
-      {/* Left Section: Image */}
+      {/* Left Section: Video */}
       <div className="w-1/2 flex justify-start pl-25 relative z-15">
-        <div className="w-50 h-100">
-          <img
-            src={element.image}
-            alt="Timeline visual"
+        <div className="w-70 h-140">
+          <video
+            src={element.highlight}
+            controls
             className="w-full h-full object-cover rounded-lg shadow-lg"
           />
         </div>
       </div>
-
-      
     </div>
   );
 }
-
-
-
