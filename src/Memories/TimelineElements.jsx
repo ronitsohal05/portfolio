@@ -16,6 +16,16 @@ export function TimelineElement1({ element }) {
         </div>
       </div>
 
+      <div className="absolute right-1/2 w-[100px] h-1 top-1/16 overflow-hidden">
+        <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
+      </div>
+      <div className="absolute left-1/2 w-[100px] h-1 top-1/2 overflow-hidden">
+        <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
+      </div>
+      <div className="absolute right-1/2 w-[100px] h-1 top-15/16 overflow-hidden">
+        <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
+      </div>
+
       {/* Timeline Icon */}
       <div className="flex justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
         <img
@@ -46,6 +56,16 @@ export function TimelineElement2({ element }) {
         <div className="w-40 h-40 bg-gray-900 flex items-center justify-center text-white text-sm p-2 rounded-lg shadow-lg">
           <p>{element.smallText}</p>
         </div>
+      </div>
+
+      <div className="absolute left-1/2 w-[100px] h-1 top-1/16 overflow-hidden">
+        <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
+      </div>
+      <div className="absolute right-1/2 w-[100px] h-1 top-1/2 overflow-hidden">
+        <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
+      </div>
+      <div className="absolute left-1/2 w-[100px] h-1 top-15/16 overflow-hidden">
+        <div className="w-50 bg-gray-600 h-1 transform -translate-x-1/2"></div>
       </div>
 
       {/* Timeline Icon */}
