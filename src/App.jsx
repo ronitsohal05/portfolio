@@ -80,7 +80,7 @@ function App() {
             <Tab label="Home" />
             <Tab label="About Me" />
             <Tab label="Projects" />
-            <Tab label="Memories" />
+            <Tab label="On the Upside" />
           </Tabs>
         </Box>
 

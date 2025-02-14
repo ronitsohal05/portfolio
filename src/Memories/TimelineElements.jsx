@@ -1,6 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Plane, Trophy, History, UsersRound } from 'lucide-react';
+import { MemoryVideo } from './MemoryVideo'
 
 const categoryIcons = {
   friends: <UsersRound className="w-10 h-10 text-secondary" />,
@@ -8,6 +8,7 @@ const categoryIcons = {
   memory: <History className="w-10 h-10 text-secondary" />,
   accomplishment: <Trophy className="w-10 h-10 text-secondary" />,
 };
+
 
 export function TimelineElement1({ element }) {
   return (
@@ -27,15 +28,10 @@ export function TimelineElement1({ element }) {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="w-70 h-140"
         >
-          <video
-            src={element.highlight}
-            controls
-            className="w-full h-full object-cover rounded-lg shadow-lg"
-          />
+          <MemoryVideo src={element.highlight} />
         </motion.div>
       </div>
 
-      
       {/*Lines that connect elements to Timeline*/}
       <div className="absolute right-1/2 w-[100px] h-1 top-1/8 overflow-hidden">
         <motion.div
@@ -163,11 +159,7 @@ export function TimelineElement2({ element }) {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="w-70 h-140"
         >
-          <video
-            src={element.highlight}
-            controls
-            className="w-full h-full object-cover rounded-lg shadow-lg"
-          />
+          <MemoryVideo src={element.highlight} />
         </motion.div>
       </div>
     </motion.div>
