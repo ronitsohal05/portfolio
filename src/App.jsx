@@ -46,6 +46,8 @@ const theme = createTheme({
         root: {
           fontFamily: 'customFont',
           color: 'white',
+          minWidth: 'auto',
+          whiteSpace: 'nowrap',
           margin: '0 32px',
           '&.Mui-selected': {
             color: '#ffffff',
