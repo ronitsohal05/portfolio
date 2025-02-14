@@ -27,5 +27,5 @@ This project is deployed on **Netlify** and is accessible at [ronitsohal.com](ht
 - **3D Portfolio** for an immersive experience
 
 ## Contact
-If you have any questions or feedback, feel free to reach out via [LinkedIn](https://linkedin.com/in/yourusername) or [Email](mailto:your.email@example.com).
+If you have any questions or feedback, feel free to reach out via [LinkedIn](https://linkedin.com/in/ronitsohal05) or [Email](rsohal2@jh.edu).
 
