@@ -47,5 +47,5 @@
 
   @font-face {
     font-family: customFont;
-    src: url(../public/fonts/TeknafRegular-rv0aB.otf);
+    src: url(/fonts/TeknafRegular-rv0aB.otf);
   }
