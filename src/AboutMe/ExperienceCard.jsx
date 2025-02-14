@@ -1,8 +1,8 @@
 export function ExperienceCard({ type, title, year }) {
   const logoMap = {
-    jhu: "/public/icons/jhumed_logo.jpeg",
-    hophacks: "/public/icons/hophacks_logo.jpeg",
-    umiami: "/public/icons/umiami_logo.jpeg",
+    jhu: "/icons/jhumed_logo.jpeg",
+    hophacks: "/icons/hophacks_logo.jpeg",
+    umiami: "/icons/umiami_logo.jpeg",
   };
 
   return (
