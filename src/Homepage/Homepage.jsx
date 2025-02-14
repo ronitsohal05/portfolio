@@ -36,7 +36,7 @@ export function Homepage() {
             }}>
                 <Intro
                     name="Ronit Sohal"
-                    characteristics={['student', 'developer', 'problem solver', 'dancer', 'chill guy']}
+                    characteristics={['student', 'developer', 'problem solver', 'movie enthusiast', 'gym rat', 'food', 'chill guy']}
                 />
             </div>
 
