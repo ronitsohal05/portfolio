@@ -23,6 +23,7 @@ This is my personal portfolio website, built to showcase my projects, skills, an
 This project is deployed on **Netlify** and is accessible at [ronitsohal.com](https://ronitsohal.com).
 
 ## Future Enhancements
+- **Skills Area** in projects section of website
 - **Color Scheme** change color scheme to be cleaner
 - **3D Portfolio** for an immersive experience
 
