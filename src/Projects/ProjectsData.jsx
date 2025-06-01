@@ -12,6 +12,12 @@ export const projects = [
         githubUrl: "https://github.com/ronitsohal05/Connect",
     },
     {
+        title: "VGS (Virtual Garage Sale)",
+        description: "Platform for college students to sell unneeded items to other students withing their college ",
+        imageUrl: "/pictures/ProjectPics/vgs.png",
+        githubUrl: "https://github.com/ronitsohal05/vgs"
+    },
+    {
         title: "Snapscript",
         description: "Script to increase snapscore, made using Selenium",
         imageUrl: "/pictures/ProjectPics/snapscript-project.jpg",
