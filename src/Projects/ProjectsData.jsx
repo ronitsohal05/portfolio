@@ -1,9 +1,9 @@
 export const projects = [
     {
-        title: "Personal Website",
-        description: "My personal website made using React, Tailwind, and Three.js.",
-        imageUrl: "/pictures/ProjectPics/portfolio-project.jpg",
-        githubUrl: "https://github.com/ronitsohal05/portfolio",
+        title: "Gymbro AI",
+        description: "Personal Trainer AI that takes care of your physical and nutritional needs",
+        imageUrl: "/pictures/ProjectPics/gymbro.png",
+        githubUrl: "https://github.com/ronitsohal05/gymbro",
     },
     {
         title: "Connect App",
@@ -16,6 +16,12 @@ export const projects = [
         description: "Platform for college students to sell unneeded items to other students withing their college ",
         imageUrl: "/pictures/ProjectPics/vgs.png",
         githubUrl: "https://github.com/ronitsohal05/vgs"
+    },
+    {
+        title: "WordLink",
+        description: "Word based game where the goal is to mutate the starting word into the goal word changing one letter at a time",
+        imageUrl: "/pictures/ProjectPics/wordlink.png",
+        githubUrl: "https://github.com/ronitsohal05/WordLink",
     },
     {
         title: "Snapscript",
@@ -40,5 +46,11 @@ export const projects = [
         description: "Implemented various ML models such as AdaBoost, Decision Tree, Random Forest Classifier, and K-Neighbors Classifier ",
         imageUrl: "/pictures/ProjectPics/csm.jpg",
         githubUrl: "https://github.com/ronitsohal05/Corporate-Stability-Predictor/tree/main",
+    },
+    {
+        title: "Personal Website",
+        description: "My personal website made using React, Tailwind, and Three.js.",
+        imageUrl: "/pictures/ProjectPics/portfolio-project.jpg",
+        githubUrl: "https://github.com/ronitsohal05/portfolio",
     }
 ];

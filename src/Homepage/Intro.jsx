@@ -4,7 +4,7 @@ export const Intro = ({ name, characteristics }) => {
   const [currentIndex, setCurrentIndex] = useState(0); // Tracks the current characteristic
   const [text, setText] = useState(""); // Tracks the displayed text
   const [isDeleting, setIsDeleting] = useState(false); // Tracks whether we are typing or deleting
-  const typingSpeed = 200; // Speed of typing in milliseconds
+  const typingSpeed = 100; // Speed of typing in milliseconds
   const pauseAfterTyping = 1500; // Pause duration after typing a word before deleting
 
   useEffect(() => {
