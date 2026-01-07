@@ -7,7 +7,6 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { Homepage } from './Homepage/Homepage';
 import { AboutMe } from './AboutMe/AboutMe';
 import { Projects } from './Projects/Projects';
-import { Memories } from './Memories/Memories'
 
 
 const theme = createTheme({
@@ -82,7 +81,6 @@ function App() {
             <Tab label="Home" />
             <Tab label="About Me" />
             <Tab label="Projects" />
-            <Tab label="On the Upside" />
           </Tabs>
         </Box>
 
@@ -95,9 +93,6 @@ function App() {
         )}
         {tabIndex === 2 && (
           <Projects />
-        )}
-        {tabIndex === 3 && (
-          <Memories />
         )}
       </div>
     </ThemeProvider>
