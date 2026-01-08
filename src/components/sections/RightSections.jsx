@@ -13,7 +13,7 @@ export default function RightSections() {
 
   const projects = [
     {
-      title: "NajmAI",
+      title: "Guardian",
       subtitle: "SaaS Framer Template",
       img: "https://picsum.photos/seed/najmai/160/160",
     },
@@ -30,22 +30,23 @@ export default function RightSections() {
   ];
 
   const experience = [
-    {
-      company: "PixelForge Studios",
-      desc: "Led the design team in creating user-centric mobile and web applications, improving the user experience and increasing user engagement.",
-      dates: "Jan 2020 – Present",
-    },
-    {
-      company: "BlueWave Innovators",
-      desc: "Developed and implemented design strategies for new product lines, collaborated closely with engineers and product managers.",
-      dates: "Jun 2017 – Dec 2019",
-    },
-    {
-      company: "TrendCraft Solutions",
-      desc: "Designed user interfaces for e-commerce platforms, focusing on enhancing usability and visual appeal.",
-      dates: "Mar 2015 – May 2017",
-    },
-  ];
+  {
+    company: "Johns Hopkins University",
+    desc: "Undergraduate Research Assistant working on applied machine learning and multimodal AI systems, focusing on real-world data pipelines, model evaluation, and system-level integration.",
+    dates: "2024 – Present",
+  },
+  {
+    company: "Johns Hopkins Medicine",
+    desc: "Teaching Assistant for Data Structures, supporting students through office hours, code reviews, and concept explanations covering algorithms, complexity analysis, and implementation details.",
+    dates: "2024 – Present",
+  },
+  {
+    company: "HopHacks",
+    desc: "Website Team Lead responsible for building and maintaining the official hackathon platform, collaborating with designers and organizers to deliver a scalable, reliable experience for hundreds of participants.",
+    dates: "2023 – Present",
+  },
+];
+
 
   const tools = [
     {
