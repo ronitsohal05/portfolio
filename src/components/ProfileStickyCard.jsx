@@ -38,12 +38,9 @@ export default function ProfileStickyCard({
 }) {
   return (
     <div
-      style={{
-        "--accent": "#60A5FA",
-        "--accent2": "#34D399",
-      }}
+      style={{ "--accent": "#60A5FA", "--accent2": "#34D399" }}
       className={[
-        "relative overflow-hidden rounded-[var(--radius-card)]",
+        "profile-card relative overflow-hidden rounded-[var(--radius-card)]",
         "bg-[var(--card)] text-[var(--cardText)] shadow-[var(--shadow-card)]",
         "ring-1 ring-[color:var(--cardText)/0.08]",
         "transition-transform hover:-translate-y-[2px]",
@@ -70,9 +67,10 @@ export default function ProfileStickyCard({
         />
       </svg>
 
-      <div className="p-6">
-        <div className="rounded-[var(--radius-inner)] bg-[color:var(--cardText)/0.05] p-4 ring-1 ring-[color:var(--cardText)/0.08]">
-          <div className="group relative aspect-[4/5] overflow-hidden rounded-[18px] bg-[color:var(--cardText)/0.06]">
+      <div className="p-6 pc-pad">
+        <div className="rounded-[var(--radius-inner)] bg-[color:var(--cardText)/0.05] p-4 ring-1 ring-[color:var(--cardText)/0.08] pc-photoWrap">
+          <div className="group relative aspect-[4/5] overflow-hidden rounded-[18px] bg-[color:var(--cardText)/0.06] pc-photo">
+
             {imageSrc ? (
               <img
                 src={imageSrc}
@@ -91,11 +89,11 @@ export default function ProfileStickyCard({
           </div>
         </div>
 
-        <h3 className="mt-6 text-center text-4xl font-extrabold tracking-tight">
+        <h3 className="mt-6 text-center text-4xl font-extrabold tracking-tight pc-name">
           {name}
         </h3>
 
-        <div className="relative mt-5 flex items-center justify-center">
+        <div className="relative mt-5 flex items-center justify-center pc-divider">
           <svg
             className="pointer-events-none absolute left-0 top-1/2 w-full -translate-y-1/2 opacity-70"
             height="80"
@@ -115,23 +113,18 @@ export default function ProfileStickyCard({
             <img
               src="/pictures/bluejay.png"
               alt="Blue Jay"
-              className="
-                h-30 w-30
-                object-contain
-                drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)]
-                transition-transform
-                hover:scale-[1.05]
-              "
+              className="h-30 w-30 object-contain drop-shadow-[0_2px_6px_rgba(0,0,0,0.35)] transition-transform hover:scale-[1.05] pc-bluejay"
             />
+
           </div>
 
         </div>
 
-        <p className="mt-6 px-5 text-center text-[17px] leading-snug text-[var(--cardMuted)]">
+        <p className="mt-6 px-5 text-center text-[17px] leading-snug text-[var(--cardMuted)] pc-subtitle">
           {subtitle}
         </p>
 
-        <div className="mt-8 flex items-center justify-center gap-3 pb-1">
+        <div className="mt-8 flex items-center justify-center gap-3 pb-1 pc-icons">
           <SocialIconButton href={links.github} label="GitHub">
             <Github size={22} />
           </SocialIconButton>

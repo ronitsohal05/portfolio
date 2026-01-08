@@ -26,6 +26,24 @@
   --shadow-card: 0 24px 60px rgba(0,0,0,0.45);
 }
 
+@media (max-height: 820px) {
+  .profile-card .pc-pad { padding: 16px !important; }
+  .profile-card .pc-photoWrap { padding: 12px !important; }
+  .profile-card .pc-photo { aspect-ratio: 1 / 1 !important; } /* was 4/5 (tall) */
+  .profile-card .pc-name { margin-top: 16px !important; font-size: 2rem !important; } /* ~text-3xl */
+  .profile-card .pc-divider { margin-top: 12px !important; }
+  .profile-card .pc-bluejay { width: 88px !important; height: 88px !important; } /* shrink */
+  .profile-card .pc-subtitle { margin-top: 14px !important; font-size: 15px !important; }
+  .profile-card .pc-icons { margin-top: 18px !important; }
+}
+
+/* Even shorter: compress more */
+@media (max-height: 720px) {
+  .profile-card .pc-photo { aspect-ratio: 4 / 3 !important; }
+  .profile-card .pc-bluejay { width: 72px !important; height: 72px !important; }
+  .profile-card .pc-name { font-size: 1.75rem !important; } /* between 2xl/3xl */
+}
+
 /* Smooth anchor scrolling */
 html {
   scroll-behavior: smooth;
