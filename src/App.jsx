@@ -72,7 +72,7 @@ export default function App() {
             <main className="h-full min-h-0">
               <div
                 id="right-scroll"
-                className="h-full min-h-0 overflow-y-auto pr-3 [scrollbar-gutter:stable] snap-y snap-mandatory scroll-smooth"
+                className="h-full min-h-0 overflow-y-auto pr-3 [scrollbar-gutter:stable] snap-y snap-mandatory scroll-smooth no-scrollbar"
               >
                 <div className="max-w-[760px]">
                   <RightSections />
