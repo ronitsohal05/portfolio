@@ -1,7 +1,7 @@
 import React from "react";
 import TopNav from "./components/TopNav.jsx";
 import ProfileStickyCard from "./components/ProfileStickyCard.jsx";
-import RightSections from "./components/RightSections.jsx";
+import RightSections from "./components/sections/RightSections.jsx";
 
 export default function App() {
   return (
