@@ -49,27 +49,143 @@ export default function RightSections() {
 
 
   const tools = [
-    {
-      icon: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Framer-logo.svg",
-      name: "Framer",
-      sub: "Website Builder",
-    },
-    {
-      icon: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
-      name: "Figma",
-      sub: "Design Tool",
-    },
-    {
-      icon: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
-      name: "ChatGPT",
-      sub: "AI Assistant",
-    },
-    {
-      icon: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
-      name: "Nextjs",
-      sub: "React framework",
-    },
-  ];
+  // Languages
+  {
+    icon: "/icons/java.png",
+    name: "Java",
+    sub: "Programming Language",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+    name: "Python",
+    sub: "Programming Language",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg",
+    name: "C / C++",
+    sub: "Systems Programming",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+    name: "JavaScript",
+    sub: "Web Programming",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+    name: "TypeScript",
+    sub: "Typed JavaScript",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+    name: "HTML / CSS",
+    sub: "Web Markup & Styling",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png",
+    name: "SQL",
+    sub: "Relational Databases",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg",
+    name: "R",
+    sub: "Statistical Computing",
+  },
+
+  // Frameworks & Libraries
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+    name: "React",
+    sub: "Frontend Framework",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
+    name: "Flask",
+    sub: "Backend API Framework",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/7/79/Spring_Boot.svg",
+    name: "Spring Boot",
+    sub: "Java Backend Framework",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg",
+    name: "Keras",
+    sub: "Deep Learning",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg",
+    name: "TensorFlow",
+    sub: "Machine Learning",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg",
+    name: "Scikit-learn",
+    sub: "Machine Learning",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png",
+    name: "Selenium",
+    sub: "Browser Automation",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/3/3f/LangChain_logo.png",
+    name: "LangChain",
+    sub: "LLM Orchestration",
+  },
+
+  // Tools & Platforms
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    name: "AWS",
+    sub: "Cloud Infrastructure",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg",
+    name: "MongoDB",
+    sub: "NoSQL Database",
+  },
+  {
+    icon: "https://cdn.simpleicons.org/firebase",
+    name: "Firebase",
+    sub: "Backend Platform",
+  },
+  {
+    icon: "/icons/java.png",
+    name: "Pinecone",
+    sub: "Vector Database",
+  },
+  {
+    icon: "https://cdn.simpleicons.org/git",
+    name: "Git",
+    sub: "Version Control",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
+    name: "VS Code",
+    sub: "Code Editor",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Postman_%28software%29.png",
+    name: "Postman",
+    sub: "API Testing",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
+    name: "Linux",
+    sub: "Operating System",
+  },
+  {
+    icon: "icons/docker.png",
+    name: "Docker",
+    sub: "Containers",
+  },
+  {
+    icon: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
+    name: "OpenAI API",
+    sub: "LLMs & AI APIs",
+  },
+];
+
 
   return (
     <div className="space-y-24">
