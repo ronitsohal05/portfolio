@@ -35,6 +35,7 @@ export default function App() {
                   pr-3
                   [scrollbar-gutter:stable]
                   snap-y snap-mandatory scroll-smooth
+                  no-scrollbar
                 "
               >
                 <div className="max-w-[760px]">
