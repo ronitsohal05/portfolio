@@ -5,6 +5,7 @@ import ProfileStickyCard from "./components/ProfileStickyCard.jsx";
 import RightSections from "./components/sections/RightSections.jsx";
 
 export default function App() {
+
   return (
     <div className="fixed inset-0 bg-[var(--bg)] text-[var(--text)]">
       <TopNav />

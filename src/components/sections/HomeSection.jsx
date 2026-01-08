@@ -29,6 +29,7 @@ export default function HomeSection({ stats }) {
 
   return (
     <motion.section
+      id="home"
       variants={section}
       initial="hidden"
       animate="show"

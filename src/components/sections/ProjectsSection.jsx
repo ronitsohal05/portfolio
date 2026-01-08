@@ -14,7 +14,7 @@ export default function ProjectsSection({ projects }) {
   };
 
   return (
-    <section className="snap-start pb-10 min-h-[calc(100vh-7rem)] flex flex-col justify-start overflow-hidden">
+    <section id="projects" className="snap-start pb-10 min-h-[calc(100vh-7rem)] flex flex-col justify-start overflow-hidden">
       <motion.div
         variants={itemUp}
         initial="hidden"

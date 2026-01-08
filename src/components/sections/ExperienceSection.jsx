@@ -18,7 +18,7 @@ export default function ExperienceSection({ items }) {
   };
 
   return (
-    <section className="snap-start pb-10 min-h-[calc(100vh-7rem)] flex flex-col justify-start overflow-hidden">
+    <section id="experience" className="snap-start pb-10 min-h-[calc(100vh-7rem)] flex flex-col justify-start overflow-hidden">
       {/* Hero */}
       <motion.div
         variants={itemUp}

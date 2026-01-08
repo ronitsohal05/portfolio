@@ -20,26 +20,30 @@ function useActiveSection(sectionIds) {
     const scroller = document.getElementById("right-scroll");
     if (!scroller) return;
 
-    const onScroll = () => {
-      const y = scroller.scrollTop + 152; // matches scroll-mt-[9.5rem] (9.5 * 16px)
-      let current = active;
+    const computeActive = () => {
+      const y = scroller.scrollTop + 152;
+
+      let current = sectionIds[0] ?? "home";
 
       for (const id of sectionIds) {
         const el = document.getElementById(id);
         if (!el) continue;
         if (el.offsetTop <= y) current = id;
       }
+
       setActive(current);
     };
 
-    onScroll();
-    scroller.addEventListener("scroll", onScroll, { passive: true });
-    return () => scroller.removeEventListener("scroll", onScroll);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // run once immediately
+    computeActive();
+
+    scroller.addEventListener("scroll", computeActive, { passive: true });
+    return () => scroller.removeEventListener("scroll", computeActive);
   }, [sectionIds.join("|")]);
 
   return active;
 }
+
 
 /** Simple inline icons (no deps) */
 const Icons = {
