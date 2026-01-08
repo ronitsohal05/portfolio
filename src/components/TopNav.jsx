@@ -148,6 +148,7 @@ export default function TopNav() {
               key={`${it.label}-${idx}`}
               onClick={() => (it.action ? it.action() : scrollRightPaneTo(it.id))}
               className={[
+                "cursor-pointer",
                 "relative grid place-items-center",
                 "h-9 w-9 rounded-[12px]",
                 "transition",
