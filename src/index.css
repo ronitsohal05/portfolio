@@ -1,51 +1,37 @@
 @import "tailwindcss";
 
-@theme{
-    --color-primary: #030303;
-    --color-secondary: #ffffff;
+@theme {
+  --bg: #0b0c0f;
+  --surface: #111319;
+  --surface-2: #0f1117;
+
+  --border: rgba(255,255,255,0.08);
+  --border-strong: rgba(255,255,255,0.12);
+
+  --ghost: rgba(255,255,255,0.12);
+  --ghost2: rgba(255,255,255,0.18);
+
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.62);
+
+  --card: #ffffff;
+  --cardText: #0b0c0f;
+  --cardMuted: rgba(11, 12, 15, 0.60);
+
+  --accent: #f28a2e;
+
+  --radius-card: 28px;
+  --radius-inner: 22px;
+  --radius-pill: 999px;
+  --shadow-card: 0 24px 60px rgba(0,0,0,0.45);
 }
 
-@layer utilities {
-    @keyframes blink {
-      0%, 100% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-    }
-  
-    .animate-blink {
-      animation: blink 0.7s step-end infinite;
-    }
-  }
+/* Smooth anchor scrolling */
+html {
+  scroll-behavior: smooth;
+}
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: #030303;
-  }
-  
-  .hover-effect {
-    transition: transform 0.3s ease, color 0.3s ease;
-    color: #ffffff !important;
-  }
-  
-  .hover-effect:hover {
-    transform: scale(1.2);
-    color: #888888 !important;
-  }
-
-  .wireframe-container {
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
-  }
-  
-  .wireframe-container svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  @font-face {
-    font-family: customFont;
-    src: url(/fonts/TeknafRegular-rv0aB.otf);
-  }
+body {
+  background: var(--bg);
+  color: var(--text);
+}
