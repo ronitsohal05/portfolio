@@ -1,8 +1,6 @@
-import React from "react";
-
-export default function Row({ img, title, subtitle }) {
+export default function Row({ img, title, subtitle, link }) {
   return (
-    <a href="#" className="group block">
+    <a href={link} className="group block">
       <div className="flex items-center justify-between gap-6 py-6">
         <div className="flex items-center gap-6">
           {img ? (

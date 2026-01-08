@@ -12,22 +12,39 @@ export default function RightSections() {
 
 
   const projects = [
-    {
-      title: "Guardian",
-      subtitle: "SaaS Framer Template",
-      img: "https://picsum.photos/seed/najmai/160/160",
-    },
-    {
-      title: "Damas",
-      subtitle: "Free Framer Template",
-      img: "https://picsum.photos/seed/damas/160/160",
-    },
-    {
-      title: "Faseelh",
-      subtitle: "Free Framer Template",
-      img: "https://picsum.photos/seed/faseelh/160/160",
-    },
-  ];
+  {
+    title: "Guardian",
+    subtitle: "Real-Time Computer Vision & Event Processing System",
+    img: "icons/guardian.png",
+    link: "https://github.com/ronitsohal05/Guardian"
+  },
+  {
+    title: "GymBro AI",
+    subtitle: "Multimodal AI Fitness Assistant",
+    img: "icons/gymbro.png",
+    link: "https://github.com/ronitsohal05/gymbro"
+  },
+  {
+    title: "HopMatch",
+    subtitle: "Scalable Team Matching Platform",
+    img: "/icons/hophacks.png",
+    link: "https://github.com/HopHacks/hophacks-flask"
+  },
+  {
+    title: "WordLink",
+    subtitle: "Word Game made for my First Year Seminar class",
+    img: "icons/wordlink.png",
+    link: "https://wordlinkfys.netlify.app/"
+  },
+  {
+    title: "Connect",
+    subtitle: "Congressional App Challenge Winner",
+    img: "/icons/connect.png",
+    link: "https://www.congressionalappchallenge.us/22-fl25/"
+  },
+
+];
+
 
   const experience = [
   {

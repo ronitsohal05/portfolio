@@ -7,7 +7,7 @@ export default function ProjectsSection({ projects }) {
       <SectionHero id="projects" top="RECENT" ghost="PROJECTS" />
       <div className="mt-10">
         {projects.map((p) => (
-          <Row key={p.title} title={p.title} subtitle={p.subtitle} img={p.img} />
+          <Row key={p.title} title={p.title} subtitle={p.subtitle} img={p.img} link={p.link} />
         ))}
       </div>
     </section>
