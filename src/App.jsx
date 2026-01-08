@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import TopNav from "./components/TopNav.jsx";
 import ProfileStickyCard from "./components/ProfileStickyCard.jsx";
 import RightSections from "./components/sections/RightSections.jsx";
@@ -13,9 +14,15 @@ export default function App() {
           <div className="grid h-full grid-cols-1 lg:grid-cols-[420px_1fr] gap-x-16 py-10">
             {/* LEFT RAIL */}
             <aside className="hidden lg:flex justify-center">
-              <div className="w-[360px]">
+              <motion.div
+                className="w-[360px]"
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                whileHover={{ y: -2 }}
+              >
                 <ProfileStickyCard />
-              </div>
+              </motion.div>
             </aside>
 
             {/* RIGHT SCROLLER */}
@@ -39,6 +46,5 @@ export default function App() {
         </div>
       </div>
     </div>
-
   );
 }
