@@ -5,10 +5,11 @@ import ToolsSection from "./ToolsSection.jsx";
 
 export default function RightSections() {
   const stats = [
-    { value: "+12", label: "YEARS OF EXPERIENCE" },
-    { value: "+46", label: "PROJECTS COMPLETED" },
-    { value: "+20", label: "WORLDWIDE CLIENTS" },
-  ];
+  { value: "12+", label: "PROJECTS BUILT" },
+  { value: "300+", label: "BUGS FIXED" },
+  { value: "100+", label: "LATE NIGHTS DEBUGGING" },
+];
+
 
   const projects = [
     {
@@ -70,7 +71,6 @@ export default function RightSections() {
   ];
 
   return (
-    // pt-0 because the RIGHT SCROLLER already has pt-28.
     <div className="space-y-24">
       <HomeSection stats={stats} />
       <ProjectsSection projects={projects} />

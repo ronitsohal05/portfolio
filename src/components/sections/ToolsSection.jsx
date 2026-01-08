@@ -1,4 +1,4 @@
-import SectionHero from "../SectionHero.jsx";
+import SectionHero from "../ui/SectionHero.jsx";
 import ToolTile from "../ui/ToolTile.jsx";
 
 export default function ToolsSection({ tools }) {

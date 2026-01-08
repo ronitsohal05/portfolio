@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 function scrollRightPaneTo(id) {
   const scroller = document.getElementById("right-scroll");

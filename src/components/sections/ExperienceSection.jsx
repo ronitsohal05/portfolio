@@ -1,4 +1,4 @@
-import SectionHero from "../SectionHero.jsx";
+import SectionHero from "../ui/SectionHero.jsx";
 import ExperienceItem from "../ui/ExperienceItem.jsx";
 
 export default function ExperienceSection({ items }) {

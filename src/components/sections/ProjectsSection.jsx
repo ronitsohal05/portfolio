@@ -1,4 +1,4 @@
-import SectionHero from "../SectionHero.jsx";
+import SectionHero from "../ui/SectionHero.jsx";
 import Row from "../ui/Row.jsx";
 
 export default function ProjectsSection({ projects }) {

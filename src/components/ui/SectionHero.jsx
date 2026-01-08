@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function SectionHero({ id, top, ghost, desc }) {
   return (
     <header id={id} className="scroll-mt-[9.5rem]">
