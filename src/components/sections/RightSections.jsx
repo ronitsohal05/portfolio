@@ -48,12 +48,12 @@ export default function RightSections() {
 
   const experience = [
   {
-    company: "Johns Hopkins University",
+    company: "Johns Hopkins Medicine",
     desc: "Undergraduate Research Assistant working on applied machine learning and multimodal AI systems, focusing on real-world data pipelines, model evaluation, and system-level integration.",
     dates: "2024 – Present",
   },
   {
-    company: "Johns Hopkins Medicine",
+    company: "Johns Hopkins Univeristy",
     desc: "Teaching Assistant for Data Structures, supporting students through office hours, code reviews, and concept explanations covering algorithms, complexity analysis, and implementation details.",
     dates: "2024 – Present",
   },
